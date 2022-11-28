@@ -8,7 +8,7 @@ window.onload = function(){
 		files = new Array();
 		for(let i = 0; i < filelist.length; i++){
 			let filename = filelist[i].name;
-			$.getJSON(filename, function( data ) {
+			$.getJSON("\\samples\\" + filename, function( data ) {
 				let logObj = data.Records;
 				logObj.fileName = filename;
 				console.log(logObj);
